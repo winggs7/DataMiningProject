@@ -2,15 +2,14 @@ package weka.api;
 
 public class HelloWeka {
 	public static void main(String[] args) throws Exception {		
-		String filename = "4_Cate";
+		String filename = "HepatitisC_Final_Ver";
 		String className = "Category";
 		Classification c = new Classification(filename, className);
+
+		c.isCrossValidation(true);
 		
-//		c.j48();
-//		c.logisticRegression();
-//		c.naiveBayes();
-//		c.svm();
-		c.randomForest();
+		c.logisticRegression();
+//		c.randomForest();
 	}
 
 }

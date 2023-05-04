@@ -10,7 +10,7 @@ public class CSV2Arff {
 
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
-		String filename = "4_Cate";
+		String filename = "HepatitisC_Final_Ver";
 		CSVLoader loader = new CSVLoader();
 		loader.setSource(new File(filename + ".csv"));
 		String[] nominalVals = {"Sex:0,1", "Category:0,1,2,3"};
