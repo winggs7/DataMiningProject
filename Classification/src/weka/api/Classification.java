@@ -47,11 +47,6 @@ public class Classification {
 		this.rand = new Random(seeds);
 	}
 
-	public void printEval() throws Exception {
-		System.out.println(eval.toSummaryString("Evaluation results:\n", false));
-		System.out.println(eval.toClassDetailsString());
-	}
-
 	public void randomForest() throws Exception {
 		this.flag = false;
 		if (flagCross) {
